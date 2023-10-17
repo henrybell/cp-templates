@@ -18,7 +18,7 @@
           "APP_NAME=${_APP_NAME}",
           "REGION=${_REGION}"
         ],
-        "script": "./utils/create.sh"
+        "script": "#!/usr/bin/env bash\n export PROJECT_ID=$(gcloud config list --format 'value(core.project)')\n export COMPUTE_SERVICE_ACCOUNT=$(gcloud projects describe ${PROJECT_ID} --format='value(projectNumber)')-compute@developer.gserviceaccount.com\n gcloud infra-manager deployments apply projects/${PROJECT_ID}/locations/${REGION}/deployments/${DEPLOYMENT_NAME} --service-account=projects/${PROJECT_ID}/serviceAccounts/${COMPUTE_SERVICE_ACCOUNT} --local-source=terraform --input-values=project_id=${PROJECT_ID},region=${REGION},cluster_id=${DEPLOYMENT_NAME}"
       }
     ]
   },

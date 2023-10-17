@@ -13,7 +13,6 @@
       {
         "id": "Create Cloud Workstations with Infra Manager",
         "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
-        "entrypoint": "bash",
         "env": [
           "APP_ID=${_APP_ID}",
           "APP_NAME=${_APP_NAME}",
@@ -37,7 +36,6 @@
       {
         "id": "Delete Cloud Workstations with Infra Manager",
         "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
-        "entrypoint": "bash",
         "env": [
           "APP_ID=${_APP_ID}",
           "APP_NAME=${_APP_NAME}",

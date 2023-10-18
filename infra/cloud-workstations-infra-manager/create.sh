@@ -13,7 +13,7 @@
 # limitations under the License.
 
 export PROJECT_ID=$(gcloud config list --format 'value(core.project)')
-export SERVICE_ACCOUNT=$(gcloud projects describe ${PROJECT_ID} --format="value(projectNumber)")@cloudbuild.gserviceaccount.com
+export SERVICE_ACCOUNT=$(gcloud projects describe ${PROJECT_ID} --format="value(projectNumber)")-compute@developer.gserviceaccount.com
 
 echo $SERVICE_ACCOUNT
 

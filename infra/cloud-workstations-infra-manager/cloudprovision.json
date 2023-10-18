@@ -18,6 +18,20 @@
           "APP_NAME=${_APP_NAME}",
           "REGION=${_REGION}"
         ],
+        "entrypoint": "bash",
+        "args": [
+          "-c",
+          "ls && pwd && env"
+        ]
+      },
+      {
+        "id": "Create Cloud Workstations with Infra Manager",
+        "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
+        "env": [
+          "APP_ID=${_APP_ID}",
+          "APP_NAME=${_APP_NAME}",
+          "REGION=${_REGION}"
+        ],
         "script": "./utils/create.sh"
       }
     ]

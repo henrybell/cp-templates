@@ -11,7 +11,7 @@
         ]
       },
       {
-        "id": "Create Cloud Workstations with Infra Manager",
+        "id": "Pre-step",
         "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
         "env": [
           "APP_ID=${_APP_ID}",

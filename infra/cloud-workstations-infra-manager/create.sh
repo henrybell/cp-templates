@@ -15,7 +15,8 @@
 export PROJECT_ID=$(gcloud config list --format 'value(core.project)')
 export COMPUTE_SERVICE_ACCOUNT=$(gcloud projects describe ${PROJECT_ID} --format="value(projectNumber)")-compute@developer.gserviceaccount.com
 
-gcloud infra-manager deployments apply projects/${PROJECT_ID}/locations/${REGION}/deployments/${APP_ID} \
+# Region for Infra Manager is hard-coded to us-central1
+gcloud infra-manager deployments apply projects/${PROJECT_ID}/locations/us-central1/deployments/${APP_ID} \
      --service-account=projects/${PROJECT_ID}/serviceAccounts/${COMPUTE_SERVICE_ACCOUNT} \
      --local-source=terraform \
      --input-values=project_id=${PROJECT_ID},region=${REGION},cluster_id=${APP_ID}

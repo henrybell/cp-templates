@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-env
-
 export PROJECT_ID=$(gcloud config list --format 'value(core.project)')
 
-gcloud infra-manager deployments delete projects/${PROJECT_ID}/locations/${REGION}/deployments/${APP_NAME}
+gcloud infra-manager deployments delete projects/${PROJECT_ID}/locations/${REGION}/deployments/${APP_ID}

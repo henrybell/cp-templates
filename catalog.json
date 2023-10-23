@@ -323,8 +323,8 @@
     "id": 17,
     "name": "Cloud Workstations via Infra Manager",
     "description": "Cloud Workstations Cluster and Configuration via Infra Manager",
-    "sourceUrl": "https://github.com/henrybell/cp-templates/tree/henrybell-infra-manager-workstation/infra/cloud-workstations-infra-manager",
-    "cloudProvisionConfigUrl": "https://raw.githubusercontent.com/henrybell/cp-templates/henrybell-infra-manager-workstation/infra/cloud-workstations-infra-manager/cloudprovision.json",
+    "sourceUrl": "https://github.com/gitrey/cp-templates/tree/main/infra/cloud-workstations-infra-manager",
+    "cloudProvisionConfigUrl": "https://raw.githubusercontent.com/gitrey/cp-templates/main/infra/cloud-workstations-infra-manager/cloudprovision.json",
     "version": "1.0.0",
     "tags": [
       "workstations",

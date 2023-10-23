@@ -16,7 +16,7 @@
         "entrypoint": "bash",
         "args": [
           "-c",
-          "git clone -b henrybell-infra-manager-workstation https://github.com/henrybell/cp-templates.git"
+          "git clone -b main https://github.com/gitrey/cp-templates.git"
         ]
       },
       {
@@ -52,7 +52,7 @@
         "entrypoint": "bash",
         "args": [
           "-c",
-          "git clone -b henrybell-infra-manager-workstation https://github.com/henrybell/cp-templates.git"
+          "git clone -b main https://github.com/gitrey/cp-templates.git"
         ]
       },
       {
